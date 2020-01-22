@@ -7,16 +7,21 @@
     <meta name="theme-color" content="#000000">
     <meta content="IE=Edge" http-equiv="X-UA-Compatible">
     <title>VK Mini App Boilerplate</title>
-    <script language="JavaScript" src="player/audio-player.js"></script>
 </head>
 
 <body>
-    <object type="application/x-shockwave-flash" data="player/player.swf" id=audioplayer1 height=24 width=290>
-		<param name=movie value="player/player.swf"></param>
-		<param name=FlashVars value="playerID=1&soundFile=http://radio-t.com/downloads/rt_podcast139.mp3"></param>
-		<param name=quality value=high></param>
-		<param name=menu value=false></param>
-		<param name=wmode value=transparent></param>
+    <audio controls>
+    <source src="http://79.174.13.205:8000/kfm" type="audio/ogg; codecs=vorbis"  controls="controls">
+    <source src="http://79.174.13.205:8000/kfm" type="audio/mpeg">
+    Тег audio не поддерживается вашим браузером. 
+  </audio>
 </body>
+
+<style>
+    audio {
+        display: flex;
+        margin: 0 auto;
+    }
+</style>
 
 </html>
